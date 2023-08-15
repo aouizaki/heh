@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h4 class="H4">AOUIDAT HORLOGE </h4><br>
+            <h3> Cette application a été développée par "Zakaria"</h3>
+            <br>
+            <div class="battery">
+                <h2>- Batterie status -</h1>
+                <p id="battery-info">Checking battery status...</p>
+            </div>
+
+            <div class="navlinks">
+                <br>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100021732737255"><img src="./facebook.png"></a></li>
+                    <li id="ins"><a href="https://www.instagram.com/zakariaaouidat/"><img src="./instagram.png"></a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="clock">
+                    <span id="hrs">00</span>
+                    <span>:</span>
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </div><br>
+                <h5>Date</h5>
+                <div class="date">
+                    <span id="jour"></span> 
+                    ,<span id="datejour">DD</span>/
+                    <span id="mois">,hh</span>/
+                    <span id="anne">nnnn</span>
+                </div>
+                <br>
+                <hr style="width: 90%;align-items: center;text-align: center;display: flex;margin-left: auto;margin-right: auto;border-radius: 10px;">
+                <br><br><br><br>
+                <div class="change">
+                    <h5>Faites votre meilleure couleur</h5><br>
+                    <button class="clickme" id="Gray" onclick="Run()"></button>
+                    <button class="clickme" id="Perpel" onclick="RunPerpel()"></button>
+                    <button class="clickme" id="Green" onclick="RunGreen()"></button>
+                    <button class="clickme" id="Black" onclick="RunBlack()"></button>
+                    <button class="clickme" id="Pro" onclick="RunPro()"></button>
+                </div>
+                <br>
+                <div class="changetext">
+                    <h5>Nav Color </h5><br>
+                    <button class="Gray" id="gray"></button>
+                    <button class="Perpel" id="perpel"></button>
+                    <button class="Green" id="green"></button>
+                    <button class="Black" id="black"></button>
+                </div><br><br>
+                <br>
+                <div class="calc">
+                    <div class="team1">
+                        <input type="text" id="nameTeam1" placeholder="      Mettre un nom">
+                        <br>
+                        <input id="inputTeam1" type="number" placeholder="     Score ">
+                        <button id="Valider1">Valider</button>
+                    </div>
+                    <div class="team2">
+                        <input type="text" id="nameTeam2" placeholder="      Mettre un nom"> 
+                        <input id="inputTeam2" type="number" placeholder="     Score ">
+                        <button id="Valider2">Valider</button>
+                    </div>
+                </div>
+                <div class="log"></div>
+                <div class="resultat">
+                    <div class="result1">
+                        <h5 id="Total1"></h5>
+                    </div>
+                    <div class="result2">
+                        <h5 id="Total2"></h5>
+                    </div>
+                </div>
+                <div class="scoretotal">
+                    <h1 id="scoretotal" style="color: white;"></h1>
+                </div><br>
+                <button id="resetButton">Reset</button>
+            </div>
+    </div>
+    <audio id="myAudio" src="ttsMP3.com_VoiceText_2023-8-1_20 9 12.mp3" preload="auto"></audio>
+    <audio id="myAudio2" src="ttsMP3.com_VoiceText_2023-8-1_20 9 28.mp3" preload="auto"></audio>
+    <audio id="beep" src="short-beep.mp3" preload="auto"></audio>
+    <audio id="timer" src="lost-timer-beep.mp3" preload="auto"></audio>
+    <script src="app.js"></script>
+</body>
+</html>

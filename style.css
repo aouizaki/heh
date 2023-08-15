@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 200vh;
+    background: linear-gradient(to top,black,gray);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.header h4 {
+    color: white;
+    background-color: rgb(0, 6, 20);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+}
+
+
+
+.header h3{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+.header small {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.box{
+    width: 95%;
+    height: 400px;
+    text-align: center;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 18%;
+    left: 50%;
+}
+.box h5 {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+.clock{
+    margin-top: 0px;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    background: rgba(66, 66, 66, 0.11);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock span{
+    display: inline-block;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.date {
+    width: 95%;
+    margin-top: 50px;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    background: rgba(66, 66, 66, 0.11);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date span{
+    display: inline-block;
+    position: relative;
+    letter-spacing: 2px;
+}
+.date span#mois {
+    margin-left: 5px;
+}
+.date span#jour {
+    margin-left: 10px;
+}
+.date span#anne {
+    margin-left: 10px;
+}
+
+
+
+ul {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+}
+ul li {
+    display: flex;
+}
+ul li#ins{
+    margin-left: 30px;
+}
+ul li a img{
+    width: 30px;
+    height: 30px;
+}
+
+.alarm{
+    margin-top: 25px;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    padding: 10px 5px;
+    border-radius: 15px;
+}
+.alarm , .content {
+    width: 100%;
+    display: flex;
+    background: transparent;
+    justify-content: center;
+}
+.alarm .content {
+    width: 100%;
+    justify-content: space-between;
+}
+.alarm .content.disable {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+select{
+    background: transparent;
+    color: white;
+    border: orange;
+    font-weight: bold;
+    font-size: 12px;
+}
+option {
+    color: black;
+}
+.alarm button {
+    border: transparent;
+    background: white;
+    padding: 10px 0px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+                                                /* CLICK STYLES */
+.clickPerpel {
+    width: 100%;
+    height: 200vh;
+    background: rgb(57, 42, 129);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+.clickGreen {
+    width: 100%;
+    height: 200vh;
+    background: rgb(9, 72, 2);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+.clickBlack {
+    width: 100%;
+    height: 200vh;
+    background: rgb(2, 2, 2);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+.clickPro {
+    width: 100%;
+    height: 200vh;
+    background: linear-gradient(to top,black,rgb(128, 128, 128));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+.click {
+    width: 100%;
+    height: 200vh;
+    background: rgb(52, 52, 52);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+.change button#Gray {
+    padding: 10px;
+    border-radius: 50%;
+    background: rgb(52, 52, 52);
+    border: .5px solid white;
+    cursor: pointer;
+}
+.change button#Green {
+    padding: 10px;
+    border-radius: 50%;
+    background: rgb(9, 72, 2);
+    border: .5px solid white;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.change button#Pro {
+    padding: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to top,black,gray);
+    background-repeat: no-repeat;
+    border: .5px solid white;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.change button#Perpel {
+    padding: 10px;
+    border-radius: 50%;
+    background: rgb(57, 42, 129);
+    border: .5px solid white;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.change button#Black {
+    padding: 10px;
+    border-radius: 50%;
+    background: rgb(2, 2, 2);
+    border: .5px solid white;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+
+
+h4.graycolor{
+    color: white;
+    background-color: rgb(31, 31, 31);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+}
+h4.perpelcolor{
+    color: white;
+    background-color: rgb(57, 42, 129);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+}
+h4.greencolor{
+    color: white;
+    background-color: rgb(9, 72, 2);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+}
+h4.blackcolor{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+}
+
+button.Gray{
+    padding: 10px;
+    border-radius: 50%;
+    background: rgb(52, 52, 52);
+    border: .5px solid white;
+    cursor: pointer;
+}
+button.Perpel{
+    padding: 10px;
+    border-radius: 50%;
+    background: rgb(57, 42, 129);
+    border: .5px solid white;
+    cursor: pointer;
+    margin-left: 15px;
+}
+button.Green{
+    padding: 10px;
+    border-radius: 50%;
+    background: rgb(9, 72, 2);
+    border: .5px solid white;
+    cursor: pointer;
+    margin-left: 15px;
+}
+button.Black{
+    padding: 10px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    border: .5px solid white;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+h2{
+    color: white;
+}
+p#battery-info {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+
+
+/* FOR CALCULATEUR --------------------------------------------------------*/
+
+.calc{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.resultat {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.calc h1 {
+    color: white;
+}
+.calc .team1 input{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 150px;
+    border: transparent;
+    box-shadow: 0 0 10px red;
+}
+.calc .team2 input{
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 150px;
+    border: transparent;
+    box-shadow: 0 0 10px red;
+    color: white;
+}
+.calc .team1 input{
+    padding: 5px 0px;
+    font-size: 15px;
+    background: transparent;
+    color: white;
+}
+.calc .team2 input {
+    padding: 5px 0px;
+    font-size: 15px;
+    background: transparent;
+}
+.calc input#inputTeam1 {
+    width: 140px;
+}
+.calc input#inputTeam2 {
+    width: 140px;
+}
+
+button#resetButton {
+    padding: 5px 20px ;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: transparent;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 0 20px rgb(65, 190, 3);
+    cursor: pointer;
+    border: 5px solid red;
+    animation: rotateBorder 1s linear infinite; /* Applying the animation */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+@keyframes rotateBorder {
+    0% {
+        border-color: rgb(0, 203, 239);
+        color: blue;
+    }
+    50% {
+        border-color: rgb(0, 159, 217);
+        color: #0c0029;
+    }
+    100% {
+        border-color: rgb(1, 98, 244);
+        color: blue;
+    }
+}
+
+
+input#inputTeam1,input#inputTeam2 {
+    border-radius: 10px;
+    width: 160px;
+    box-shadow: 0 0 10px red;
+    border: transparent;
+    background: transparent;
+    color: white;
+}
+button#Valider2,button#Valider1 {
+    border: transparent;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px white;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    animation: colors 3s linear infinite ;
+    transition: background-color 0.1s ease, color 0.3s ease;
+}
+
+@keyframes colors{
+    0%{
+        background: rgb(0, 0, 215);
+    }
+    25%{
+        background: rgb(1, 1, 142);
+    }
+    50%{
+        background: rgb(0, 0, 49);
+    }
+    75%{
+        background-color: rgb(0, 1, 41);
+    }
+    100%{
+        background-color: rgb(0, 0, 154);
+    }
+
+}
+
+
+
+input.text{
+    display: flex;
+}
+.clock , .date {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(250, 250, 250, 0.2);
+    text-align: center;
+    animation: colorChange 3s infinite alternate; /* Adding the animation */
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #070707; /* Start color */
+    }
+    100% {
+        background-color: #0c0029; /* End color */
+    }
+}
